@@ -1,0 +1,134 @@
+{
+	"name": "codeHamster",
+	"displayName": "VSCodeHamster",
+	"description": "An extension to use the hamster game within vscode",
+	"version": "0.1.5",
+	"publisher": "rssiste",
+	"engines": {
+		"vscode": "^1.40.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*",
+		"onCommand:codeHamster.openGui",
+		"onCommand:codeHamster.startServer",
+		"onCommand:codeHamster.stopServer",
+		"onWebviewPanel:hamsterGui",
+		"onView:hamsterGame",
+		"onStartupFinished"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ModellbahnFreak/VSCodeHamster.git"
+	},
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "codeHamster.gitClone",
+				"title": "Download Code from Artemis / GitHub (clone)",
+				"category": "Hamster simulator"
+			},
+			{
+				"command": "codeHamster.gitCommitPush",
+				"title": "Save Code to Artemis and test (commit&push)",
+				"category": "Hamster simulator"
+			},
+			{
+				"command": "codeHamster.test",
+				"title": "Test something",
+				"category": "Hamster simulator"
+			},
+			{
+				"command": "codeHamster.openGui",
+				"title": "Open Hamster game GUI",
+				"category": "Hamster Simulator"
+			},
+			{
+				"command": "codeHamster.executeGame",
+				"title": "Execute a hamster game with a given id",
+				"category": "Hamster Simulator"
+			},
+			{
+				"command": "codeHamster.resume",
+				"title": "Resume simulation",
+				"category": "Hamster Simulator"
+			},
+			{
+				"command": "codeHamster.pause",
+				"title": "Pause simulation",
+				"category": "Hamster Simulator"
+			},
+			{
+				"command": "codeHamster.undo",
+				"title": "Undo last simulation step",
+				"category": "Hamster Simulator"
+			},
+			{
+				"command": "codeHamster.redo",
+				"title": "Redo last undone simulation step",
+				"category": "Hamster Simulator"
+			},
+			{
+				"command": "codeHamster.killAll",
+				"title": "Kill all currently running debug sessions",
+				"category": "Hamster Simulator"
+			},
+			{
+				"command": "codeHamster.restartJava",
+				"title": "Restart the Java language server in case it has problems",
+				"category": "Hamster Simulator"
+			},
+			{
+				"command": "codeHamster.openDocumentation",
+				"title": "Opens the documentation",
+				"category": "Hamster Simulator"
+			}
+		],
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "hamsterGameOptions",
+					"title": "Hamster game",
+					"icon": "res/HamsterSW.png"
+				}
+			]
+		},
+		"views": {
+			"hamsterGameOptions": [
+				{
+					"id": "hamsterGameView",
+					"name": "Hamster Game"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./WebHamster/ && tsc -p ./gui && tsc -p ./",
+		"lint": "eslint src --ext ts",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"@types/vscode": "^1.40.0",
+		"@typescript-eslint/eslint-plugin": "^2.30.0",
+		"@typescript-eslint/parser": "^2.30.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.2",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.3.0"
+	},
+	"dependencies": {
+		"@types/request": "^2.48.5",
+		"request": "^2.88.2",
+		"vsce": "^1.81.1"
+	}
+}

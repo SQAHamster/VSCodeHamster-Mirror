@@ -1,0 +1,3 @@
+[submodule "WebHamster"]
+	path = WebHamster
+	url = ../WebHamster.git

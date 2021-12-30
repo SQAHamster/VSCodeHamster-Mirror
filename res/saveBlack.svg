@@ -1,0 +1,30 @@
+<svg
+ xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 50 50"
+   height="50mm"
+   width="50mm"
+   fill="#000000"
+   stroke="#000000"
+   >
+    <path
+       d="M 2,2 H 35.90389 L 48.000001,15.339536 V 48.000001 H 2 Z"
+       style="fill:none;fill-opacity:0;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"/>
+    <rect
+       y="27.212999"
+       x="9"
+       height="20.084761"
+       width="32"
+       style="fill:none;fill-opacity:0;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+    <rect
+       style="fill:none;fill-opacity:0;stroke-width:2.00001;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       width="24.895613"
+       height="14.4721"
+       x="9.0000048"
+       y="3.4444771" />
+    <rect
+       y="3.4840219"
+       x="24.742699"
+       height="13.39312"
+       width="8.5526247"
+       style="fill-opacity:1;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke" />
+</svg>

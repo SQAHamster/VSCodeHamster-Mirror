@@ -1,0 +1,67 @@
+#controlsContainer {
+    margin: 1.5rem;
+}
+
+#controlsContainer button {
+    background-color: var(--vscode-button-background);
+    color: var(--vscode-button-foreground);
+    border: none;
+    padding: 0.2rem;
+    display: inline-block;
+    width: 3rem;
+    height: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#controlsContainer button:hover {
+    background-color: var(--vscode-button-hoverBackground);
+}
+
+#controlsContainer button:disabled {
+    background-color: var(--vscode-button-secondaryBackground);
+    color: var(--vscode-button-secondaryForeground);
+    cursor: default;
+}
+
+#controlsContainer button span.btnImg {
+    width: 3em;
+    height: 2em;
+}
+
+#controlsContainer .form-row > div {
+    display: inline-block;
+}
+
+#controlsContainer .speedSliderContainer {
+    min-width: 50%;
+}
+
+#controlsContainer .gameDropdownContainer {
+    min-width: 50%;
+}
+
+#controlsContainer .speedSliderContainer button {
+    width: 90%;
+}
+
+#controlsContainer .gameDropdownContainer button {
+    width: 90%;
+}
+
+
+@media (min-width: 768px) {
+    #controlsContainer .custom-select {
+        min-width: 2px;
+    }
+    
+    #controlsContainer .form-control-range {
+        min-width: 2rem;
+    }
+                
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "target": "ES2015",
+        "module": "ES2015",
+        "sourceMap": true,
+        "outDir": "../out_webview",
+        "rootDir": ".",
+        "composite": true,
+        "strict": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "declarationMap": true
+    },
+    "references": [
+        {
+            "path": "../WebHamster"
+        }
+    ]
+}
